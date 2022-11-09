@@ -1,9 +1,8 @@
-all: calculate
-calculate: calculate.o helper.o
-	gcc -o calculate calculate.o helper.o
-calculate.o: calculate.c helper.h
-	gcc -c calculate.c
-helper.o: helper.c helper.h
-	gcc -c helper.c
+all: Zad1
+Zad1: Zad1.o
+	gcc -o Zad1 Zad1.o 
+Zad1.o: Zad1.c 
+	gcc -c Zad1.c
+
 clean: 
-	rm -f calculate *.o
+	rm -f Zad1 *.o
